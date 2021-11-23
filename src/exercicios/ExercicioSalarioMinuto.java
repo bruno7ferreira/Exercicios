@@ -1,4 +1,4 @@
-package salarioMinuto;
+package exercicios;
 
 import java.util.Scanner;
 
