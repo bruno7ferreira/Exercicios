@@ -18,6 +18,12 @@ public class SomaListaNumeros {
             System.out.println("idades: " + cont);
         }
 
+        Integer soma = 0;
+        for (Integer i : listaNumeros) {
+            soma += i.intValue();
+        }
+        System.out.println("A soma das idades é: " + soma);
+
     }
 
 }
