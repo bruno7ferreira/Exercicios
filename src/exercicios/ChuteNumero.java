@@ -21,8 +21,9 @@ public class ChuteNumero {
 
         //laço de 1 a 10 ok
 
-        while (palpite != numero){
-            if (palpite < 1 || palpite > 10) {
+        while (palpite != numero) {
+
+            if (true) {
                 if (palpite < 1) {
                     System.out.println("ERRO! Você informou um valor abaixo de 1");
                 } else {
@@ -41,6 +42,7 @@ public class ChuteNumero {
             }
 
         }
+        System.out.println("Parabéns você acertou! '" + numero + "'");
 
 
         entrada.close();
