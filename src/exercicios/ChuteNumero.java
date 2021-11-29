@@ -23,23 +23,23 @@ public class ChuteNumero {
 
         while (palpite != numero) {
 
-            if (true) {
-                if (palpite < 1) {
-                    System.out.println("ERRO! Você informou um valor abaixo de 1");
-                } else {
-                    System.out.println("ERRO! Você informou um valor acima de 10");
-                }
+
+            if (palpite < 1) {
+                System.out.println("ERRO! Você informou um valor abaixo de 1");
             } else {
-                if (palpite == numero) {
-                    System.out.println("Parabéns! Você acertou era o número: " + numero);
+                System.out.println("ERRO! Você informou um valor acima de 10");
+            }
+
+            if (palpite == numero) {
+                System.out.println("Parabéns! Você acertou era o número: " + numero);
+            } else {
+                if (palpite > numero) {
+                    System.out.println("errou kkkk, é um número mais baixo!");
                 } else {
-                    if (palpite > numero) {
-                        System.out.println("errou kkkk, é um número mais baixo!");
-                    } else {
-                        System.out.println("errou kkkk, é um número mais alto");
-                    }
+                    System.out.println("errou kkkk, é um número mais alto");
                 }
             }
+
 
         }
         System.out.println("Parabéns você acertou! '" + numero + "'");
