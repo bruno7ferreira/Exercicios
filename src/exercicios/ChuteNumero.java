@@ -13,6 +13,7 @@ public class ChuteNumero {
         Scanner entrada = new Scanner(System.in);
 
         Integer palpite;
+        System.out.println(numero);
 
         do {
             System.out.println("Informe um número de 1 a 10: ");
@@ -22,14 +23,16 @@ public class ChuteNumero {
         //laço de 1 a 10 ok
 
         if(palpite!=numero){
-            if (palpite>numero){
-                System.out.println("Você chutou um número acima...");
-                System.out.println("Tente novamente, informe um número de 1 a 10: ");
-                palpite = entrada.nextInt();
-            }else {
-                System.out.println("Você chutou um número abaixo...");
-                System.out.println("Tente novamente, informe um número de 1 a 10: ");
-                palpite = entrada.nextInt();
+            while (palpite!=numero){
+                if (palpite>numero){
+                    System.out.println("Você chutou um número acima...");
+                    System.out.println("Tente novamente, informe um número de 1 a 10: ");
+                    palpite = entrada.nextInt();
+                }else {
+                    System.out.println("Você chutou um número abaixo...");
+                    System.out.println("Tente novamente, informe um número de 1 a 10: ");
+                    palpite = entrada.nextInt();
+                }
             }
         }
         System.out.println("Parabéns você acertou! '" + numero + "'");
