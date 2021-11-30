@@ -13,7 +13,6 @@ public class ChuteNumero {
         Scanner entrada = new Scanner(System.in);
 
         Integer palpite;
-        System.out.println(numero);
 
         do {
             System.out.println("Informe um número de 1 a 10: ");
