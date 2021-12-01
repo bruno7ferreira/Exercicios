@@ -29,18 +29,22 @@ public class ChuteNumeroOptionPane {
         if (palpite != numero) {
             while (palpite != numero) {
                 if (palpite > numero) {
-                    JOptionPane.showInputDialog("Você chutou um número acima...");
+                    JOptionPane.showInputDialog("Você chutou um número acima...\n" +
+                            "Tente novamente, informe um número de 1 a 10: ");
                     //System.out.println("Você chutou um número acima...");
-                    System.out.println("Tente novamente, informe um número de 1 a 10: ");
-                    palpite = entrada.nextInt();
+                    //System.out.println("Tente novamente, informe um número de 1 a 10: ");
+                    palpite = parseInt(palpiteTemp);
                 } else {
-                    System.out.println("Você chutou um número abaixo...");
-                    System.out.println("Tente novamente, informe um número de 1 a 10: ");
-                    palpite = entrada.nextInt();
+                    JOptionPane.showInputDialog("Você chutou um número abaixo...\n" +
+                            "Tente novamente, informe um número de 1 a 10: ");
+                    //System.out.println("Você chutou um número abaixo...");
+                    //System.out.println("Tente novamente, informe um número de 1 a 10: ");
+                    palpite = parseInt(palpiteTemp);
                 }
             }
         }
-        System.out.println("Parabéns você acertou! '" + numero + "'");
+        JOptionPane.showInputDialog("Parabéns você acertou! '" + numero + "'");
+        //System.out.println("Parabéns você acertou! '" + numero + "'");
 
 
     }
