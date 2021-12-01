@@ -19,6 +19,7 @@ public class ChuteNumeroOptionPane {
 
         String palpiteTemp; //= JOptionPane.showInputDialog("Informe um número de 1 a 10: ");
         Integer palpite; //= parseInt(palpiteTemp);
+        System.out.println(numero);
 
         //Repete enquanto o usuário não digitar um número entre 1 e 10
         do {
@@ -26,25 +27,25 @@ public class ChuteNumeroOptionPane {
             palpite = parseInt(palpiteTemp);
         } while (palpite < 1 || palpite > 10);
 
+        //lógica para validar o número
         if (palpite != numero) {
             while (palpite != numero) {
                 if (palpite > numero) {
-                    JOptionPane.showInputDialog("Você chutou um número acima...\n" +
+                    palpiteTemp = JOptionPane.showInputDialog("Você chutou um número acima...\n" +
                             "Tente novamente, informe um número de 1 a 10: ");
-                    //System.out.println("Você chutou um número acima...");
-                    //System.out.println("Tente novamente, informe um número de 1 a 10: ");
                     palpite = parseInt(palpiteTemp);
+                    System.out.println(palpite);
                 } else {
-                    JOptionPane.showInputDialog("Você chutou um número abaixo...\n" +
+                    palpiteTemp = JOptionPane.showInputDialog("Você chutou um número abaixo...\n" +
                             "Tente novamente, informe um número de 1 a 10: ");
-                    //System.out.println("Você chutou um número abaixo...");
-                    //System.out.println("Tente novamente, informe um número de 1 a 10: ");
                     palpite = parseInt(palpiteTemp);
+                    System.out.println(palpite);
                 }
             }
+        }else {
+            JOptionPane.showMessageDialog(null,"Parabéns você acertou! '" + numero + "'");
         }
-        JOptionPane.showInputDialog("Parabéns você acertou! '" + numero + "'");
-        //System.out.println("Parabéns você acertou! '" + numero + "'");
+
 
 
     }
