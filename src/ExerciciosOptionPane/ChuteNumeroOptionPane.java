@@ -18,9 +18,12 @@ public class ChuteNumeroOptionPane {
 
 
         String palpiteTemp = JOptionPane.showInputDialog("Informe um número de 1 a 10: ");
-        int palpite = parseInt(palpiteTemp);
+        Integer palpite = parseInt(palpiteTemp);
 
-
+        do {
+            palpiteTemp = JOptionPane.showInputDialog("Informe um número de 1 a 10: ");
+            palpite = parseInt(palpiteTemp);
+        } while (palpite < 1 || palpite > 10);
 
 
 
