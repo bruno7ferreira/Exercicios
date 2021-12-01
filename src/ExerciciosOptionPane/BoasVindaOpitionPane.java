@@ -11,5 +11,4 @@ public class BoasVindaOpitionPane {
         JOptionPane.showMessageDialog(null, " Seja bem-vindo! " + nome);
 
     }
-
 }
